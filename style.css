@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C3E50;
+    color: #3498DB;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+header {
+    background-color: #1A252F; /* Slightly darker shade */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 160px;
+    width: 100%;
+}
+
+header .left {
+    flex: 1;
+}
+
+header .right {
+    flex: 1;
+}
+
+header .right ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header .right ul li {
+    margin: 0 20px;
+}
+
+header .right ul li a {
+    text-decoration: none;
+    color: #3498DB;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+main .left {
+    flex: 1;
+    color: azure;
+}
+
+main .left p span {
+    color: aliceblue;
+}
+
+main .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .right img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid #3498DB;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#project, #skills {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+section h1, section h2 {
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #1A252F; /* Slightly darker shade */
+    color: #3498DB;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+footer ul li a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .right ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    main .right {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: large;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
